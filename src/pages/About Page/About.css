@@ -10,13 +10,21 @@
     width: 300px;
     height: 100px;
     background-color: #01172F; /* navy inside */
-    border: 3px solid #B1D34A; /* green outline */
+    border: 10px solid #B1D34A; /* green outline */
     border-radius: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    gap: 15px;
+    padding-left: 15px;
     font-size: 18px;
     font-weight: bold;
     color: #3A8DEB;
     font-family: Arial, sans-serif;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain; /* keeps proportions */
   }
