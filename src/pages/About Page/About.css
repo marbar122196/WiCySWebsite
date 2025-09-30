@@ -2,29 +2,40 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;       /* space between rectangles */
+    gap: 100px;       /* space between rectangles */
     padding: 40px;   /* spacing around the group */
+    margin-top: 100px;  /* pushes boxes down */
   }
   
   .rectangle {
-    width: 300px;
-    height: 100px;
+    width: 1200px;
+    height: 300px;
     background-color: #01172F; /* navy inside */
     border: 10px solid #B1D34A; /* green outline */
-    border-radius: 10px;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 15px;
     padding-left: 15px;
-    font-size: 18px;
+    font-size: 150px;
     font-weight: bold;
     color: #3A8DEB;
-    font-family: Arial, sans-serif;
   }
 
   .icon {
-    width: 40px;
-    height: 40px;
+    width: 100px;
+    height: 100px;
     object-fit: contain; /* keeps proportions */
   }
+
+  .dropdown {
+    background-color: #0a0f29; /* dark background */
+    color: white;
+    font-size: 50px;
+    padding: 10px 15px;
+    margin: -10px 0 20px 0; /* space below each */
+    border-radius: 8px;
+    max-width: 1200px;
+    text-align: left;
+  }  
