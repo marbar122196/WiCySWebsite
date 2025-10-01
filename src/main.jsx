@@ -24,6 +24,9 @@ createRoot(document.getElementById('root')).render(
         <div className="nav-spacer" aria-hidden="true"></div>
         
         <Routes> /* routes you to correct page */
+          {/* LANDING ROUTE */}
+          <Route path="/" element={<Home />}/>
+          
           <Route path="/home" element={<Home />} />
           <Route path="/events" element={<Events />} />
           <Route path="/about" element={<About />} />

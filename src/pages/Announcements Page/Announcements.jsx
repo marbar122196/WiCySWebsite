@@ -1,1 +1,8 @@
-export default function Announcements(){ return <h1>Announcements</h1> }
+import TitleBar from "../../components/TitleBar.jsx";
+export default function Announcements(){ 
+    return (
+        <main>
+            <TitleBar title="Announcements" />
+        </main>
+    )
+}

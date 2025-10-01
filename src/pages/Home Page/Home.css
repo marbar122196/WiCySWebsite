@@ -38,5 +38,35 @@
 
 .rec {
     animation: blink 1s steps(2, jump-none) infinite;
+    font-size: 1.5rem;
 }
 @keyframes blink { 50% {opacity: 0.2; } }
+
+.time {
+    font-size: 1.5rem;
+}
+
+/* all frames stacked */
+.cam__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;                    /* hidden by default */
+  transition: opacity 400ms ease;/* crossfade */
+}
+
+/* only current index is visible */
+.cam__img.is-active {
+  opacity: 1;
+}
+
+/* (optional) pause slideshow on hover */
+.cam-frame:hover { --paused: 1; }
+/* If you want pause, change the JS interval to use requestAnimationFrame or keep it simple: skip pause for now */
+
+/* (accessibility) reduce animation if user prefers */
+@media (prefers-reduced-motion: reduce) {
+  .cam__img { transition: none; }
+}
