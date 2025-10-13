@@ -15,12 +15,17 @@
     border-radius: 20px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 15px;
     padding-left: 15px;
     font-size: 150px;
     font-weight: bold;
     color: #3A8DEB;
+  }
+
+  .rectangle.active {
+    background-color: #9741A3; /* purple */
+    transition: background-color 0.3s ease;
   }
 
   .icon {

@@ -14,13 +14,11 @@ const About = () => {
   return (
     <div className="about-container">
       {/* History */}
-      <div className="rectangle">
-        <img
-          src={historyImg}
-          alt="History"
-          className="icon"
-          onClick={() => setShowHistory(!showHistory)}
-        />
+      <div
+        className={`rectangle ${showHistory ? "active" : ""}`}
+        onClick={() => setShowHistory(!showHistory)}
+      >
+        <img src={historyImg} alt="History" className="icon" />
         <span>History</span>
       </div>
       {showHistory && (
@@ -33,13 +31,11 @@ const About = () => {
       )}
 
       {/* Mission */}
-      <div className="rectangle">
-        <img
-          src={missionImg}
-          alt="Mission"
-          className="icon"
-          onClick={() => setShowMission(!showMission)}
-        />
+      <div
+        className={`rectangle ${showMission ? "active" : ""}`}
+        onClick={() => setShowMission(!showMission)}
+      >
+        <img src={missionImg} alt="Mission" className="icon" />
         <span>Mission</span>
       </div>
       {showMission && (
@@ -52,13 +48,11 @@ const About = () => {
       )}
 
       {/* Value */}
-      <div className="rectangle">
-        <img
-          src={valueImg}
-          alt="Value"
-          className="icon"
-          onClick={() => setShowValue(!showValue)}
-        />
+      <div
+        className={`rectangle ${showValue ? "active" : ""}`}
+        onClick={() => setShowValue(!showValue)}
+      >
+        <img src={valueImg} alt="Value" className="icon" />
         <span>Value</span>
       </div>
       {showValue && (
