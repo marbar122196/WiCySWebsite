@@ -1,9 +1,9 @@
 import {useEffect, useState} from "react"
 import './Home.css'
 
-import pic1 from "../../assets/pics/Photo1.JPG"
-import pic2 from "../../assets/pics/cat.jpeg"
-import pic3 from "../../assets/pics/Photo2.JPG"
+import pic1 from "../../assets/pics/MainPage/Photo1.JPG"
+import pic2 from "../../assets/pics/MainPage/cat.jpeg"
+import pic3 from "../../assets/pics/MainPage/Photo2.JPG"
 
 const IMAGES = [pic1, pic2, pic3]
 

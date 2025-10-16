@@ -1,3 +1,6 @@
+.app-content {
+    padding-top: 50px;
+}
 .title-card {
     --panel: #01172F;
     --accent: #b1d34a;
@@ -70,6 +73,3 @@
 /* Make skinnier / smaller (non-uniform scale) */
 .title-corner.--skinny { transform: scaleX(0.85) scaleY(0.85); }
 .title-corner.br.--skinny { transform: scale(-1, -1) scaleX(0.8); } /* mirrored & narrower */
-
-/* make sure content below your fixed navbar doesn’t hide */
-.app-content{ padding-top: 70px; }

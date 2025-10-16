@@ -4,8 +4,8 @@ import "./TitleBar.css"
 export default function TitleBar({ title, subtitle }) {
     return (
         <section className="title-card" role ="banner" aria-label={title}>
-        {/* one master path in <defs> */}
-        <svg style={{position:"absolute", width:0, height:0}} aria-hidden="true">
+        {/* one master path in <defs> */ /* corner blobs below, this was taken from the figma */}
+        <svg style={{position:"absolute", width:0, height:0}} aria-hidden="true"> 
         <defs>
             <path id="cornerBlob" d="
             M167.702 541.565
